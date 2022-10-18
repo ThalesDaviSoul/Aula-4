@@ -7,6 +7,17 @@ public class Empresa {
         this.cnpj = cnpj;
     }
 
+    // Getters and setters
+    public String getCnpj(){
+        return cnpj;
+    }
+
+    public Funcionario[] getEmpregados(){
+        return empregados;
+    }
+
+
+
     public void adicionarFuncionario(Funcionario novo){
         for(int i = 0; i < empregados.length; i++){
             if(empregados[i] == null){
